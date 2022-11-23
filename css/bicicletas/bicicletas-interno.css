@@ -1,0 +1,197 @@
+.bicicleta-produto-bg {
+  background: var(--cor-11);
+}
+
+.bicicleta-produto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 40px;
+  padding-bottom: 120px;
+}
+
+#bicicleta-interno .title-area p {
+  font: 600 2rem/1.5 "Roboto", sans-serif;
+  text-transform: uppercase;
+}
+
+.imagens-bike {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.imagens-bike img {
+  flex: 1;
+  min-width: 200px;
+}
+
+.imagens-bike img:first-child {
+  min-width: 100%;
+}
+
+.texto-descricao-produto {
+  font: var(--font-2-l);
+  color: var(--cor-5);
+  margin-bottom: 32px;
+}
+
+.produto-comprar {
+  display: grid;
+  grid-template-columns: max-content auto;
+  align-items: center;
+  justify-items: start;
+  gap: 8px 12px;
+  margin-bottom: 32px;
+}
+
+.produto-comprar a {
+  grid-row: span 2;
+}
+
+.produto-comprar span {
+  font: var(--font-1-xs);
+  color: var(--cor-6);
+  background: var(--cor-12);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 4px;
+  padding: 4px 8px;
+}
+
+.descricao-produto h3 {
+  font: var(--font-1-xs);
+  color: var(--cor-0);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.list-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 34px;
+  background: var(--cor-12);
+  border-radius: 5px;
+  padding: 34px;
+  margin-bottom: 32px;
+}
+
+.list-info img {
+  margin-bottom: 8px;
+  width: 24px;
+}
+
+.list-info h4 {
+  font: 500 1.125rem/1.5 "Poppins", sans-serif;
+  color: var(--cor-0);
+  margin-bottom: 8px;
+}
+
+.list-info p {
+  font: var(--font-2-xs);
+  color: var(--cor-5);
+}
+
+.list-ficha {
+  background: var(--cor-12);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.list-ficha li {
+  font: var(--font-2-m);
+  color: var(--cor-4);
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--cor-11);
+}
+
+.list-ficha li:last-child {
+  border-bottom: none;
+}
+
+.list-ficha li span {
+  color: var(--cor-6);
+}
+
+@media (max-width: 800px) {
+  .bicicleta-produto {
+    grid-template-columns: 1fr;
+    padding-bottom: 60px;
+  }
+
+  .imagens-bike {
+    grid-row: 2;
+  }
+
+  .title-area p {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .list-info {
+    grid-template-columns: 1fr;
+  }
+
+  .produto-comprar {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Parte do pedale-seguro  */
+
+.pedale-tranquilo-bg {
+  background: var(--cor-11);
+  box-shadow: inset 0 80px var(--cor-0), inset 0 -80px var(--cor-12);
+}
+
+.pedale-tranquilo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.pedale-tranquilo-descricao {
+  padding-bottom: 160px;
+  padding-top: 160px;
+}
+
+.pedale-tranquilo-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pedale-tranquilo h2 {
+  margin-bottom: 32px;
+}
+
+.pedale-tranquilo p {
+  font: var(--font-2-l);
+  color: var(--cor-5);
+  margin-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+  .pedale-tranquilo-bg {
+    box-shadow: none;
+  }
+
+  .pedale-tranquilo {
+    grid-template-columns: 1fr;
+  }
+
+  .pedale-tranquilo-descricao {
+    grid-row: 1;
+    padding-top: 80px;
+    padding-bottom: 0px;
+  }
+
+  .pedale-tranquilo-imagem img {
+    height: 280px;
+  }
+}

@@ -1,0 +1,72 @@
+.escolha-bike {
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+
+.escolha-bike .title {
+  color: var(--cor-11);
+  padding-bottom: 40px;
+}
+
+.carrossel {
+  display: flex;
+  gap: 20px;
+  padding: 0 20px 20px 20px;
+  flex-wrap: nowrap;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: auto;
+}
+
+#bicicleta-interno .carrossel {
+  padding: 0 0 20px 0;
+}
+
+.carrossel li {
+  min-width: 280px;
+}
+
+.carrossel img {
+  margin-bottom: 16px;
+}
+
+.carrossel h3,
+.escolha-bike-interno h3 {
+  font: var(--font-1-xl);
+  margin-bottom: 8px;
+}
+
+.carrossel h3 {
+  display: flex;
+  align-items: center;
+}
+
+.carrossel h3::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 8px;
+  margin-right: 8px;
+  background: var(--cor-p1);
+  transition: 0.2s;
+}
+
+.carrossel a:hover h3::before {
+  width: 24px;
+}
+
+.carrossel p,
+.escolha-bike-interno p {
+  font: var(--font-2-m);
+}
+
+.carrossel p {
+  margin-left: 20px;
+}
+
+@media (max-width: 800px) {
+  .escolha-bike {
+    padding-bottom: 60px;
+  }
+}

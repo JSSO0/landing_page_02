@@ -1,0 +1,118 @@
+.seguros-bg {
+  background: var(--cor-11);
+}
+
+.seguros-bg > h2 {
+  padding-top: 60px;
+}
+
+.seguro {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+#seguro .seguro {
+  padding-top: 0;
+}
+
+.seguro p {
+  color: var(--cor-0);
+}
+
+.subtitle-prata {
+  color: var(--cor-6);
+}
+
+.subtitle-ouro {
+  color: var(--cor-p1);
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: end;
+}
+
+.card h3 {
+  font: var(--font-1-xl);
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.card ul {
+  margin-bottom: 20px;
+}
+
+.card li p {
+  font: var(--font-2-m);
+  padding: 10px 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.card li p::before {
+  content: "";
+  background-image: url(../../img/icones/lista.svg);
+  display: block;
+  width: 13px;
+  height: 9px;
+  position: absolute;
+  left: -21px;
+}
+
+.prata a {
+  background: var(--cor-10);
+  color: var(--cor-4);
+}
+
+.prata a:hover {
+  background: var(--cor-9);
+}
+
+.prata,
+.ouro {
+  background: var(--cor-12);
+  border-radius: 4px;
+  padding: 32px;
+  padding-left: 52px;
+}
+
+.valor-sg {
+  font: var(--font-1-xl);
+  line-height: 0.5;
+  text-align: end;
+}
+
+.valor-sg span {
+  font: var(--font-1-xs);
+  color: var(--cor-6);
+}
+
+/* Seguro pagina */
+
+.subtitle-seguro {
+  font: var(--font-2-l);
+  color: var(--cor-5);
+  text-transform: uppercase;
+}
+
+@media (max-width: 800px) {
+  .card li p {
+    font-size: 1rem;
+  }
+  .card a {
+    padding: 12px 16px;
+  }
+}
+
+@media (max-width: 550px) {
+  .card a {
+    font-size: 0.9rem;
+  }
+}

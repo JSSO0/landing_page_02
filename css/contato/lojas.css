@@ -1,0 +1,97 @@
+.lojas-locais-bg {
+  background: var(--cor-1);
+}
+
+.lojas-locais {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 40px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.lojas-locais h2 {
+  color: var(--cor-12);
+  grid-column: 1 / -1;
+  margin-bottom: 60px;
+}
+
+.lojas-locais > img {
+  border-radius: 4px 4px 0 0;
+  margin-bottom: 32px;
+}
+
+.regiao {
+  background: var(--cor-0);
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.regiao-descricao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px 16px;
+  padding: 32px;
+}
+
+.regiao-descricao h3,
+.horario {
+  grid-column: 1 / -1;
+}
+
+.regiao h3 {
+  font: var(--font-1-xl);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.regiao h3::before {
+  content: "";
+  width: 12px;
+  height: 8px;
+  display: inline-block;
+  background-color: var(--cor-p1);
+}
+
+.contato-regiao {
+  display: grid;
+  gap: 8px;
+  border-left: 2px solid var(--cor-2);
+  padding-left: 12px;
+}
+
+.contato-regiao p,
+.contato-regiao a {
+  font: 500 1rem/2 "Roboto", sans-serif;
+  color: var(--cor-8);
+}
+
+.horario {
+  font: var(--font-1-xs);
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .lojas-locais {
+    gap: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .lojas-locais h2 {
+    margin-bottom: 32px;
+  }
+
+  .regiao-descricao {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .lojas-locais {
+    grid-template-columns: 1fr;
+  }
+}
